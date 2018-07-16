@@ -1,0 +1,13 @@
+/AbstractGenericDAO.java/1.34/Fri Jul 22 07:33:20 2011//
+/ClosableConnectionFactory.java/1.1/Mon Mar 24 02:14:43 2008//
+/ConnectionFactory.java/1.4/Thu Sep 14 01:16:48 2006//
+/ConnectiveDAO.java/1.7/Mon Mar 31 12:30:59 2008//
+/DAO2ArrayListAdapter.java/1.1/Tue Dec  5 02:21:23 2006//
+/DataSourceConnectionFactory.java/1.4/Fri Jan 12 06:39:09 2007//
+/DbcpConnectionFactory.java/1.4/Wed Mar 24 12:04:16 2010//
+/DefaultConnectionFactory.java/1.18/Fri Jul 22 07:33:20 2011//
+/GenericDAO.java/1.11/Wed Dec  5 02:31:36 2007//
+/IDAO.java/1.6/Fri Jul 22 07:33:20 2011//
+/JDBCConnectionFactory.java/1.6/Tue Feb 15 01:30:42 2011//
+/SpringConnectionFactory.java/1.6/Mon Oct  5 02:47:49 2009//
+/XAPoolConnectionFactory.java/1.3/Mon May 25 01:25:08 2009//

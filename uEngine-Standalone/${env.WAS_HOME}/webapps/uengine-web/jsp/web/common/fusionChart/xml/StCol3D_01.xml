@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart palette='1' caption='직급별 인력 현황' shownames='1' showvalues='0' showSum='1' decimals='0' overlapColumns='0' baseFontSize='12'>
+<categories>
+<category label='임원' />
+<category label='부장' />
+<category label='부부장' />
+<category label='차장' />
+<category label='과장' />
+<category label='대리' />
+<category label='계장/사원' />
+</categories>
+<dataset seriesName='정규직'  showValues='0'>
+<set value='0' />
+<set value='0' />
+<set value='7' />
+<set value='34' />
+<set value='48' />
+<set value='96' />
+<set value='35' />
+</dataset>
+<dataset seriesName='계약직'  showValues='0'>
+<set value='3' />
+<set value='7' />
+<set value='4' />
+<set value='18' />
+<set value='8' />
+<set value='5' />
+<set value='5' />
+</dataset>
+<dataset seriesName='도급직'  showValues='0'>
+<set value='0' />
+<set value='0' />
+<set value='2' />
+<set value='11' />
+<set value='16' />
+<set value='41' />
+<set value='20' />
+</dataset>
+</chart>

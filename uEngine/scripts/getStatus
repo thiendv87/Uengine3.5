@@ -1,0 +1,4 @@
+val = pm.getActivityStatus("<%=instanceId%>", "_1_1");
+//val = pm.getActivityDetails("<%=instanceId%>", "_0");
+
+return val

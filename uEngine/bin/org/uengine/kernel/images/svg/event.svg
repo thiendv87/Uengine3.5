@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-74 164.8 463 465.2" style="enable-background:new -74 164.8 463 465.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#636466;stroke-width:10;}
+	.st1{opacity:0.23;enable-background:new    ;}
+	.st2{fill:url(#SVGID_2_);stroke:#636466;stroke-width:4;}
+	.st3{opacity:0.43;fill:#FFFFFF;enable-background:new    ;}
+</style>
+<radialGradient id="SVGID_1_" cx="118.5957" cy="504.8074" r="197.7826" gradientTransform="matrix(0.8651 0.5016 0.5016 -0.8651 -198.8086 746.8213)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.1699" style="stop-color:#FCFCFC"/>
+	<stop  offset="0.3012" style="stop-color:#F2F2F2"/>
+	<stop  offset="0.4197" style="stop-color:#E2E2E2"/>
+	<stop  offset="0.5306" style="stop-color:#CACACA"/>
+	<stop  offset="0.6362" style="stop-color:#ACACAC"/>
+	<stop  offset="0.7379" style="stop-color:#878787"/>
+	<stop  offset="0.8364" style="stop-color:#5C5C5C"/>
+	<stop  offset="0.9299" style="stop-color:#2A2A2A"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</radialGradient>
+<polygon class="st0" points="233.7,553.8 80.9,554.1 -27.2,446.2 -27.5,293.5 80.4,185.3 233.1,185.1 341.2,292.9 341.5,445.7 "/>
+<g class="st1">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="463" height="145" xlink:href="7A4B83A8.png"  transform="matrix(1 0 0 1 -74 463.7997)">
+	</image>
+</g>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="169.6554" y1="101.7021" x2="169.6554" y2="596.5012" gradientTransform="matrix(0.9841 0.1775 -0.1775 0.9841 36.156 19.9787)">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+<polygon class="st2" points="170.4,210.6 60.1,338 134.6,387 115.1,489.2 240.7,346.7 162.3,311.8 "/>
+<path class="st3" d="M338,293l-116.4-95.7L-33.7,386.2l22.9,0.4C81.6,342.7,198.1,311.4,338,293z"/>
+</svg>

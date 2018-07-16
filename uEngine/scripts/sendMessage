@@ -1,0 +1,5 @@
+fis = new FileInputStream("c:\\uengine\\standalone2\\settings\\src\\org\\uengine\\processdesigner\\activityTypes.xml");
+actList = (ArrayList)GlobalContext.deserialize(fis, String.class);
+
+
+return actList;

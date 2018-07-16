@@ -1,0 +1,12 @@
+/ActivityCompleteMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/ApprovalActivityCompleteMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/ApprovalDraftActivityCompleteMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/ApprovalLineChangeMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/BaseStdMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/DelegateWorkItemMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/InitializeProcessInstanceMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/ProcessStartMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/ProcessStopMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/ReturnMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/TaskInfoMsg.java/1.1/Tue Feb 15 01:49:57 2011//
+/WorkItemAcceptMsg.java/1.1/Tue Feb 15 01:49:57 2011//

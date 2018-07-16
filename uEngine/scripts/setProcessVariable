@@ -1,0 +1,1 @@
+pm.setProcessVariable("<%=instanceId%>", "", "name", (new ScriptUtil()).formatSerializable("가나다라"));

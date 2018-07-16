@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Copyright 2004 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <!-- General description of your web application -->
+
+    <display-name>My Web Application</display-name>
+
+    <description>
+    </description>
+
+    <!-- Servlet definitions for the servlets that make up
+         your web application, including initialization
+         parameters.  With Tomcat, you can also send requests
+         to servlets not listed here with a request like this:
+
+           http://localhost:8080/{context-path}/servlet/{classname}
+
+         but this usage is not guaranteed to be portable.  It also
+         makes relative references to images and other resources
+         required by your servlet more complicated, so defining
+         all of your servlets (and defining a mapping to them with
+         a <servlet-mapping> element) is recommended.
+
+         Servlet initialization parameters can be retrieved in a
+         servlet or JSP page by calling:
+
+             String value =
+               getServletConfig().getInitParameter("name");
+
+         where "name" matches the <param-name> element of
+         one of these initialization parameters.
+
+         You can define any number of servlets, including zero.
+    -->
+    
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+        <param-value>
+        	<!-- /WEB-INF/applicationContext.xml  -->
+        </param-value>
+    </context-param>
+	 
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- 
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	
+	<servlet>
+		<servlet-name>QuartzInitializer</servlet-name>
+		<servlet-class>org.quartz.ee.servlet.QuartzInitializerServlet</servlet-class>
+		<init-param>
+			<param-name>shutdown-on-unload</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>start-scheduler-on-load</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+ 		<servlet-name>JobScheduler</servlet-name> 
+ 		<servlet-class>org.uengine.scheduler.JobScheduler</servlet-class>
+ 		<load-on-startup>2</load-on-startup>
+ 	</servlet>
+ -->
+	<servlet>
+		<servlet-name>UengineProperty</servlet-name>
+		<servlet-class>org.uengine.admin.servlet.UenginePropertyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UengineProperty</servlet-name>
+		<url-pattern>/uengine-web/processmanager/showUEngineProperties.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ExportServlet</servlet-name>
+		<servlet-class>org.uengine.admin.servlet.ExportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExportServlet</servlet-name>
+		<url-pattern>/processmanager/exportDefinition.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ImportProcessAliasValidateionServlet</servlet-name>
+		<servlet-class>org.uengine.admin.servlet.ImportProcessAliasValidateionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImportProcessAliasValidateionServlet</servlet-name>
+		<url-pattern>/processmanager/importValidateDefinition.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>fakejnlp</servlet-name>
+		<jsp-file>/wih/documentHandler/DocumentInvoker_JNLP.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fakejnlp</servlet-name>
+		<url-pattern>/uengine-web/wih/documentHandler/DocumentInvoker.jnlp</url-pattern>
+	</servlet-mapping>
+
+ 	<servlet>
+		<servlet-name>fakejnlp2</servlet-name>
+		<jsp-file>/wih/applicationHandler/ApplicationInvoker_JNLP.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fakejnlp2</servlet-name>
+		<url-pattern>/uengine-web/wih/applicationHandler/ApplicationInvoker.jnlp</url-pattern>
+	</servlet-mapping>
+
+ 	<servlet>
+		<servlet-name>fakejnlp3</servlet-name>
+		<jsp-file>/processmanager/ProcessDesigner_JNLP.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fakejnlp3</servlet-name>
+		<url-pattern>/processmanager/ProcessDesigner.jnlp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>formList</servlet-name>
+		<servlet-class>org.uengine.admin.servlet.FormListService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>formList</servlet-name>
+		<url-pattern>/formList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deptList</servlet-name>
+		<servlet-class>com.defaultcompany.organization.web.chartpicker.DepartmentListService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deptList</servlet-name>
+		<url-pattern>/deptList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userList</servlet-name>
+		<servlet-class>com.defaultcompany.organization.web.chartpicker.UserListService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userList</servlet-name>
+		<url-pattern>/userList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>authority</servlet-name>
+		<servlet-class>com.defaultcompany.web.acl.AuthorityService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>authority</servlet-name>
+		<url-pattern>/authority</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>defaultPermission</servlet-name>
+		<servlet-class>com.defaultcompany.web.acl.DefaultPermissionService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>defaultPermission</servlet-name>
+		<url-pattern>/defaultPermission</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dashboardCount</servlet-name>
+		<servlet-class>com.defaultcompany.web.dashboard.DashboardCountService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dashboardCount</servlet-name>
+		<url-pattern>/dashboardCount</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dashboardWorkList</servlet-name>
+		<servlet-class>com.defaultcompany.web.dashboard.DashboardWorkListService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dashboardWorkList</servlet-name>
+		<url-pattern>/dashboardWorkList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>dashboardProcessList</servlet-name>
+		<servlet-class>com.defaultcompany.web.dashboard.DashboardProcessListService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dashboardProcessList</servlet-name>
+		<url-pattern>/dashboardProcessList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TelnetNormalServlet</servlet-name>
+		<servlet-class>org.uengine.telnet.TelnetNormalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TelnetNormalServlet</servlet-name>
+		<url-pattern>/TelnetNormalServlet.jsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>flowchartService</servlet-name>
+		<servlet-class>org.uengine.admin.servlet.FlowchartService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>flowchartService</servlet-name>
+		<url-pattern>/flowchartService</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ganttChartService</servlet-name>
+		<servlet-class>com.defaultcompany.web.gantt.servlet.GanttChartService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ganttChartService</servlet-name>
+		<url-pattern>/ganttChartService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>tagService</servlet-name>
+        <servlet-class>com.defaultcompany.web.tag.TagService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tagService</servlet-name>
+        <url-pattern>/tagService</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>olapService</servlet-name>
+        <servlet-class>com.defaultcompany.web.olap.servlet.OlapService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>olapService</servlet-name>
+        <url-pattern>/olapService</url-pattern>
+    </servlet-mapping>
+	<!-- Spring WebService -->
+	
+	<servlet>
+        <servlet-name>spring-ws</servlet-name>
+        <servlet-class>org.springframework.ws.transport.http.MessageDispatcherServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>spring-ws</servlet-name>
+        <url-pattern>/services/*</url-pattern>
+    </servlet-mapping>
+    
+   	<!-- Http Service 
+	<servlet>
+        <servlet-name>external</servlet-name>
+        <servlet-class>com.defaultcompany.external.controller.http.StdMsgController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>external</servlet-name>
+        <url-pattern>/external/*</url-pattern>
+    </servlet-mapping>
+    -->
+
+
+    <!-- Define the default session timeout for your application,
+         in minutes.  From a servlet or JSP page, you can modify
+         the timeout for a particular session dynamically by using
+         HttpSession.getMaxInactiveInterval(). -->
+
+    <session-config>
+      <session-timeout>1440</session-timeout>    <!-- 30 minutes -->
+    </session-config>
+    
+    <error-page>
+		<error-code>500</error-code>
+		<location>/common/callback/errorpage.jsp</location>
+	</error-page>
+
+	<jsp-config>
+	    <taglib>
+			<taglib-uri>http://www.uengine.org/taglibs/bpm</taglib-uri>
+			<taglib-location>/WEB-INF/tlds/taglibs_bpm.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://www.uengine.org/taglibs/input</taglib-uri>
+			<taglib-location>/WEB-INF/tlds/taglibs_input.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

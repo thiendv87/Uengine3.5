@@ -1,0 +1,12 @@
+pd = "CRC Request v1";	
+	pid = pm.initializeProcess(pd);
+	pdr = pm.getProcessDefinitionRemote(pd);
+                                                                
+	pm.executeProcess(pid);
+
+root = (new File(".").getAbsolutePath());
+root = root.replace('\\','/').substring(0, root.length()-1);
+
+
+html = pm.viewProcessInstanceFlowChart(pid, new Hashtable()).replaceAll("images", "file://"+root+"images")//.replace('<','');//"file://c:/uengine/200402/images");//.replace('<','');
+return pid+ "<br>" +html;

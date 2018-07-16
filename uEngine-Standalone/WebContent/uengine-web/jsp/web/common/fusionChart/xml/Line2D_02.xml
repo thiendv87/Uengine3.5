@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='청구금액 변동추이(최근 1년)' yAxisMinValue='22200000000' yAxisMaxValue='22300000000' baseFont='굴림' numberPrefix='\' showValues='0' alternateHGridColor='FCB541' alternateHGridAlpha='20' divLineColor='FCB541' divLineAlpha='50' canvasBorderColor='666666' baseFontColor='666666' lineColor='FCB541' baseFontSize='12'>
+	<set label='07.04' value='22236308749' />
+	<set label='07.05' value='22233308749' />
+	<set label='07.06' value='22239308749' />
+	<set label='07.07' value='22240308749' />
+	<set label='07.08' value='22243308749' />
+	<set label='07.09' value='22251308749' />
+	<set label='07.10' value='22255308749' />
+	<set label='07.11' value='22260308749' />
+	<set label='07.12' value='22263308749' />
+	<set label='08.01' value='22266636702' />
+	<set label='08.02' value='22263308749' />
+	<set label='08.03' value='22275681994' />
+
+	<styles>
+		<definition>
+			<style name='Anim1' type='animation' param='_xscale' start='0' duration='1' />
+			<style name='Anim2' type='animation' param='_alpha' start='0' duration='0.6' />
+			<style name='DataShadow' type='Shadow' alpha='40'/>
+		</definition>
+		<application>
+			<apply toObject='DIVLINES' styles='Anim1' />
+			<apply toObject='HGRID' styles='Anim2' />
+			<apply toObject='DATALABELS' styles='DataShadow,Anim2' />
+	</application>	
+	</styles>
+
+</chart> 

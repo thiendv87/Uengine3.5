@@ -1,0 +1,9 @@
+var pds = pm.listProcessDefinitionRemotesLight();
+
+var str="";
+
+for(var i=0; i<pds.length; i++){
+	str = str + (pds[i].getName() + "<br>");
+}
+
+return str;

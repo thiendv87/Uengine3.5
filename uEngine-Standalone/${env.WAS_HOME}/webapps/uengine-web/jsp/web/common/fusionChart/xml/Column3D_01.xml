@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='1인당 평균비용(2008년)' xAxisName='조직' baseFont='굴림' numberPrefix='\' showValues='1' decimals='0' formatNumberScale='0' >
+<set label='경영관리본부' value='74000' />
+<set label='' />
+<set label='솔루션사업본부' value='68000' />
+<set label='' />
+<set label='우리은행ITS본부' value='64200' />
+<set label='' />
+<set label='TIS본부' value='61200' />
+</chart>

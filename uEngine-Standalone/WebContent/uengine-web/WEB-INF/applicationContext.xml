@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 		
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+<!--  ProcessManagerRemote -->
+
+	<bean id="processManagerService" class="org.uengine.processmanager.ProcessManagerBean" scope="prototype">
+		<property name="managedTransaction" value="true"/>
+		<property name="autoCloseConnection" value="false"/>
+		<property name="connectionFactory" ref="springConnectionFactory"/>		
+	</bean>
+
+	<bean id="springConnectionFactory" class="org.uengine.util.dao.SpringConnectionFactory">
+		<property name="transactionManager" ref="txManager"/>
+	</bean>
+
+	<aop:config>
+		<aop:pointcut id="processManagerServiceOperation" expression="execution(* org.uengine.processmanager.ProcessManagerRemote.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="processManagerServiceOperation"/>
+	</aop:config>
+ 
+<!-- wih 
+	<bean id="WIHService" class="com.uengine.wihmanager.SpringWihBean">
+		<property name="dataSource" ref="dataSource"/>	
+		<property name="processManager" ref="processManagerService"/>		
+	</bean>
+
+	<aop:config>
+		<aop:pointcut id="WIHServiceOperation" expression="execution(* com.uengine.wihmanager.SpringWihRemote.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="WIHServiceOperation"/>
+	</aop:config>
+-->
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true"/>
+			<tx:method name="*"/>
+		</tx:attributes>
+	</tx:advice>
+
+<!--
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="uengineHSQLConnectionPool"/>
+		<property name="resourceRef" value="true"/>
+	</bean>
+-->
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	    <property name="driverClassName" value="org.hsqldb.jdbcDriver"/>
+	    <property name="url" value="jdbc:hsqldb:hsql://localhost:9001/"/>
+	    <property name="username" value="sa"/>
+	    <property name="password" value=""/>
+	    <property name="defaultAutoCommit" value="true"/>
+	    <property name="maxActive" value="10" />
+	    <property name="maxIdle" value="30" />
+	    <property name="maxWait" value="10000" />
+	</bean>
+
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    	<property name="dataSource" ref="dataSource"/>
+    </bean>
+     
+ <!-- rmi --> 
+<!-- 
+ 	<bean id="rmiExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+	 	<property name="serviceName" value="uEngineProcessManagerService"/> 
+	 	<property name="service" ref="processManagerService"/> 
+	 	<property name="serviceInterface" value="org.uengine.processmanager.ProcessManagerRemote"/> 
+	 	<property name="registryPort" value="1099"/> 
+ 	</bean>
+-->
+ 
+ 	<!-- bean id="rmiUengineProcessManagerService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">	
+ 		<property name="serviceUrl" value="rmi://127.0.0.1:1199/uEngineProcessManagerService"/>
+  		<property name="serviceInterface" value="org.uengine.processmanager.ProcessManagerRemote"/>
+ 	</bean>
+ 	 	
+ 	<bean id="RMITest" class="com.anyframe.test.RMITest">
+ 		<property name="rmiUengineProcessManagerService" ref="rmiUengineProcessManagerService"/>
+ 	</bean>-->
+ 
+
+ 	
+</beans>

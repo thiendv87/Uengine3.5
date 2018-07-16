@@ -1,0 +1,8 @@
+style = new Hashtable();
+style.put("flowControl", "");
+
+html = pm.viewProcessInstanceFlowChart("<%=instanceId%>", style)
+html = html.replaceAll("images", "http://localhost/html/uengine-web/processmanager/images");
+html = html.replaceAll("<img src='' width=2 height=0>", " ");
+
+return html

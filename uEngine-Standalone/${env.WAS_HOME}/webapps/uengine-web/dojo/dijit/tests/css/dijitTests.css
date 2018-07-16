@@ -1,0 +1,159 @@
+
+body {
+    
+    padding:2em 2em 2em 2em;
+}
+h1.testTitle {
+    font-size:2em;
+    margin:0 0 1em 0;
+}
+.plusIcon, .plusBlockIcon {
+    background-image: url(../images/plus.gif);
+    background-repeat: no-repeat; 
+    width: 16px;
+    height: 16px;
+}
+.plusBlockIcon {
+    display: block !important;
+}
+.noteIcon1 {
+    background-image: url(../images/note.gif);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.processIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_process.gif);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.formIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_form.gif);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.classIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_class.gif);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.ruleIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_rule.gif);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.roleIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_role.png);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.excelIcon {
+    background-image: url(../../../../uengine-web/processmanager/images/obj_icon_excel.gif);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.userIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_user.png);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.comIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_company.png);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.deptIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_quarter.png);
+    background-repeat: no-repeat; 
+    width: 20px;
+    height: 20px;
+}
+
+.flatScreenIcon {
+    background-image: url(../images/flatScreen.gif);
+    background-repeat: no-repeat; 
+    width: 32px;
+    height: 32px;
+}
+.dijitTestNodeDialog {
+    position:absolute;
+    top:5px;
+    right:5px;
+    display:block;
+    width:200px;
+    visibility:hidden;
+    background-color:#fff !important;
+    color:#000 !important; 
+    border:1px solid #000;
+    padding:5px; 
+}
+.dijitTestNodeDialog table {
+    background-color:#fff !important;
+}
+.dijitTestNodeDialog td {
+    padding:3px; 
+}
+.dijitTestNodeShowing {
+    visibility:visible; 
+}
+.customFolderOpenedIcon, .customFolderClosedIcon {
+    background-image: url('../../demos/mail/icons.png'); 
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    padding-right:4px;
+    background-position: -44px;
+}
+.dj_ie6 .customFolderOpenedIcon, .dj_ie6 .customFolderClosedIcon {
+    background-image: url('../../demos/mail/icons.gif');
+}
+.customFolderClosedIcon {
+    background-position: -154px;
+}
+body .medium {
+        font-size: larger; 
+}
+
+.folderClosedIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_folder_closed.png);
+    background-repeat: no-repeat; 
+    width: 16px;
+    height: 16px;
+}
+
+.folderOpenIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_folder_open.png);
+    background-repeat: no-repeat; 
+    width: 16px;
+    height: 16px;
+}
+.definitionIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_definition.png);
+    background-repeat: no-repeat; 
+    width: 16px;
+    height: 16px;
+}
+.organizationIcon {
+    background-image: url(../../../../processmanager/images/obj_icon_quarter.gif);
+    background-repeat: no-repeat; 
+    width: 16px;
+    height: 16px;
+}

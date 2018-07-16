@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.suncom/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>bpm</shortname>
+  <uri>http://www.uengine.org/taglibs/bpm</uri>
+  <info>BPM</info>
+  
+  <!-- Page Tag -->
+  <tag>
+    <name>page</name>
+    <tagclass>org.uengine.ui.taglibs.PagingTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>
+      paging
+    </info>
+    <attribute>
+      <name>totalcount</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>pagecount</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>pagelimit</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>currentpage</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>locale</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>link</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>	
+  
+  <!-- Sort Tag -->
+  <tag>
+    <name>Sort</name>
+	<tagclass>org.uengine.ui.taglibs.SortTag</tagclass>
+	<bodycontent>JSP</bodycontent>
+	<info>
+	  Sort tag
+    </info>
+    <attribute>
+      <name>columnid</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>columnname</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+      </attribute>
+  </tag>
+  
+  	<!-- JsonObjectTag -->
+	<tag>
+		<name>jsonObject</name>
+		<tagclass>org.uengine.ui.taglibs.JsonObjectTag</tagclass>
+		<bodycontent>scriptless</bodycontent>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+  
+</taglib>

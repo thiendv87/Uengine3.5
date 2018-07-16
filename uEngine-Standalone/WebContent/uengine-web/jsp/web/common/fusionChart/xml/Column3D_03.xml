@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='1인당 평균비용(2008년)' xAxisName='조직' baseFont='굴림' baseFontSize='12' numberPrefix='' showValues='1' decimals='0' formatNumberScale='0' >
+<set label='ITS기획팀' value='174000' />
+<set label='ITS설계팀' value='250000' />
+<set label='수신팀' value='74000' />
+<set label='여신팀' value='140000' />
+<set label='카드팀' value='94000' />
+<set label='외환/자금팀' value='75600' />
+<set label='전자금융팀' value='124000' />
+<set label='데이터관리팀' value='123000' />
+<set label='경영정보팀' value='98000' />
+<set label='영업팀' value='212000' />
+<set label='SI팀' value='94000' />
+<set label='그룹시너지팀' value='54000' />
+<set label='경남ITS팀' value='64000' />
+<set label='광주ITS팀' value='44000' />
+</chart>

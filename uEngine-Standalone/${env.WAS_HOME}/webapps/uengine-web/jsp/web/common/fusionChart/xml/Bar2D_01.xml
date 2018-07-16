@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='서비스 유형별 단가' baseFontSize='12' showValues='0' decimals='0' formatNumberScale='0' chartRightMargin='30' bgColor='ffffff' showBorder='0'>
+	<set label='Application 개발' value='62000' />
+	<set label='Application 운영' value='57000' />
+	<set label='HelpDesk 서비스' value='71000' />
+	<set label='Mainframe 서비스' value='94000' />
+	<set label='Server 서비스' value='61000' />
+	<set label='보안 서비스' value='60000' />
+	<set label='BRS운영 서비스' value='29000' />
+	<set label='Network 서비스' value='22000' />
+	<set label='단말 서비스' value='76000' />
+	<set label='ATM' value='94000' />
+	<set label='CDP' value='61000' />
+	<set label='CD' value='60000' />
+	<set label='APT' value='10000' />
+	<set label='공과금' value='70000' />
+	<set label='센터설비 서비스' value='10000' />
+	<set label='전용회선 서비스' value='10000' />
+	<set label='전용회선 서비스' value='60000' />
+	<set label='통신공사 서비스' value='60000' />
+	<set label='기타서비스' value='60000' />
+</chart>

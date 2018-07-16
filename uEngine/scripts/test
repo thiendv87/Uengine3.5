@@ -1,0 +1,7 @@
+style = new Hashtable();
+
+html = pm.viewProcessDefinitionFlowChart("수주견적 v7", style)
+html = html.replaceAll("images", "http://localhost/html/uengine-web/processmanager/images");
+html = html.replaceAll("<img src='' width=2 height=0>", " ");
+
+return html

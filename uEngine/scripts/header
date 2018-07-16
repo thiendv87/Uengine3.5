@@ -1,0 +1,16 @@
+importPackage(Packages.org.uengine.kernel);
+importPackage(Packages.org.uengine.processmanager);
+importPackage(Packages.org.uengine.usermanager);
+importPackage(Packages.javax.naming);
+importPackage(Packages.java.io);
+importPackage(Packages.java.util);
+importPackage(Packages.java.lang);
+importPackage(Packages.javax.security.auth.login);
+importPackage(Packages.javax.security.auth);
+importPackage(Packages.org.jboss.security.auth.callback);
+importPackage(Packages.javax.security.auth.callback);
+importPackage(Packages.org.uengine.util);
+
+	context = new InitialContext();
+	pmh = context.lookup("ProcessManagerHomeRemote");
+	pm = pmh.create();

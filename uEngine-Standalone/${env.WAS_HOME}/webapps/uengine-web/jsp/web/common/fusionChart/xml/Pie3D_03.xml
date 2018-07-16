@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart palette='4' decimals='0' enableSmartLabels='1' enableRotation='0'  showBorder='1' startingAngle='70' caption='본부별 전체 인력 현황' baseFontSize='12'>
+  <set label='감사팀' value='9'  />
+  <set label='ITS본부' value='343' />
+  <set label='솔루션사업본부' value='223' />
+  <set label='경영관리본부' value='41'/>
+  <set label='TIS사업본부' value='185'/>
+</chart>

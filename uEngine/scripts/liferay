@@ -1,0 +1,10 @@
+cemh = context.lookup("com_liferay_portlet_calendar_ejb_CalEventManager");
+cem = cemh.create();
+
+System.setProperty("java.security.auth.login.config", "auth.conf"); 
+		
+handler = new UsernamePasswordHandler("test@liferay.com", "test".toCharArray());
+lc = new LoginContext("client-login", handler); 
+lc.login(); 
+
+//cem.addEvent("title","description", 3, 9, 2004, 10, 8, 3, 11, 2004, 2, 10, true, false,"Appointment", true, "location", "street", "city", "state", "621210", "04343432424", false, null, "MSN", 15,1);

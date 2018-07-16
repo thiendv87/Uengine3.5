@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart palette='4' decimals='0' enableSmartLabels='1' enableRotation='0'  showBorder='1' startingAngle='70' caption='항목별 업무 등록 현황' baseFontSize='12'>
+  <set label='개발' value='17'  />
+  <set label='SI' value='12' />
+  <set label='자체개선' value='18' />
+  <set label='운영' value='8' isSliced='1'/>
+  <set label='투자' value='10' isSliced='1'/>
+  <set label='일반' value='16' isSliced='1'/>
+</chart>

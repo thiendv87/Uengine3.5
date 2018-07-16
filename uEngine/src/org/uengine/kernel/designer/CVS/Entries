@@ -1,0 +1,16 @@
+/AbstractActivityDesigner.java/1.36/Thu Apr  8 07:47:13 2010//
+/AllActivityDesigner.java/1.17/Sun Sep  7 18:20:36 2008//
+/AtomicHumanActivityDesigner.java/1.1/Sat May 16 06:30:11 2009//
+/CompensatableActivityDesigner.java/1.2/Sat Jun 17 07:51:25 2006//
+/ComplexActivityDesigner.java/1.24/Sun May 17 09:21:24 2009//
+/DefaultActivityDesigner.java/1.18/Tue Feb  2 01:11:52 2010//
+/FormActivityDesigner.java/1.5/Thu Apr  8 07:47:13 2010//
+/HumanActivityDesigner.java/1.10/Wed Jul 30 09:50:44 2008//
+/LoopActivityDesigner.java/1.8/Thu Oct  9 13:25:56 2008//
+/ProcessDefinitionDesigner.java/1.27/Sun May 17 09:21:13 2009//
+/ReferenceBlockActivityDesigner.java/1.1/Thu Sep 14 01:16:51 2006//
+/ScopeActivityDesigner.java/1.11/Fri Jul 22 07:33:25 2011//
+/SequenceActivityDesigner.java/1.7/Sat May 16 06:30:22 2009//
+/SubProcessActivityDesigner.java/1.7/Wed Mar 11 04:04:26 2009//
+/SwitchActivityDesigner.java/1.7/Mon Mar 22 04:38:50 2010//
+/TryCatchActivityDesigner.java/1.2/Sat Jun 17 07:51:25 2006//
