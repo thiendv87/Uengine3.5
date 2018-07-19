@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.0_01" class="java.beans.XMLDecoder"> 
+ <object class="org.metaworks.Table"> 
+  <void property="fieldDescriptors"> 
+   <array class="org.metaworks.FieldDescriptor" length="5"> 
+    <void index="0"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>ITEM</string> 
+      </void> 
+      <void property="name"> 
+       <string>ITEM</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="1"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>UNITPRICE</string> 
+      </void> 
+      <void property="inputter"> 
+       <object class="org.metaworks.inputter.NumberInput"/> 
+      </void> 
+      <void property="name"> 
+       <string>UNITPRICE</string> 
+      </void> 
+      <void property="type"> 
+       <int>4</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="2"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>PRICE</string> 
+      </void> 
+      <void property="inputter"> 
+       <object class="org.metaworks.inputter.NumberInput"/> 
+      </void> 
+      <void property="name"> 
+       <string>PRICE</string> 
+      </void> 
+      <void property="type"> 
+       <int>4</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="3"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>QUANTITIY</string> 
+      </void> 
+      <void property="inputter"> 
+       <object class="org.metaworks.inputter.NumberInput"/> 
+      </void> 
+      <void property="name"> 
+       <string>QUANTITIY</string> 
+      </void> 
+      <void property="type"> 
+       <int>4</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="4"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>SUPPLIER</string> 
+      </void> 
+      <void property="inputter"> 
+       <object class="org.metaworks.inputter.TableReferenceInput"> 
+        <void property="referenceFieldName"> 
+         <string>NAME</string> 
+        </void> 
+        <void property="referenceTable"> 
+         <object class="org.metaworks.Table"> 
+          <void property="componentName"> 
+           <string>tables.legacyERP.TRADINGPARTNER</string> 
+          </void> 
+          <void id="FieldDescriptorArray0" property="fieldDescriptors"/> 
+          <void property="fieldDescriptors"> 
+           <object idref="FieldDescriptorArray0"/> 
+          </void> 
+          <void id="AbstractPropertyDescriptorArray0" property="propertyDescriptors"/> 
+          <void property="propertyDescriptors"> 
+           <object idref="AbstractPropertyDescriptorArray0"/> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>SUPPLIER</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="fullKeyMode"> 
+   <boolean>true</boolean> 
+  </void> 
+  <void property="name"> 
+   <string>ORDERSUB</string> 
+  </void> 
+  <void id="AbstractPropertyDescriptorArray1" property="propertyDescriptors"/> 
+  <void property="propertyDescriptors"> 
+   <object idref="AbstractPropertyDescriptorArray1"/> 
+  </void> 
+ </object> 
+</java> 

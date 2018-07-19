@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Schema name="uengine">
+ 
+  <Dimension name="InstanceByDefinition">
+    <Hierarchy hasAll="true" allMemberName="All ProcessInstances" primaryKey="INSTID">
+      <Table name="BPM_PROCINST"/>
+      <Level name="Definition" column="DEFNAME" uniqueMembers="true"/>
+      <Level name="Instance Name" column="NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+
+  <Dimension name="InstanceByBusinessStatus">
+    <Hierarchy hasAll="true" allMemberName="All ProcessInstances" primaryKey="INSTID">
+      <Table name="BPM_PROCINST"/>
+      <Level name="BusinessStatus" column="INFO" uniqueMembers="true"/>
+      <Level name="Instance Name" column="NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+
+  <Dimension name="InstanceByStatus">
+    <Hierarchy hasAll="true" allMemberName="All ProcessInstances" primaryKey="INSTID">
+      <Table name="BPM_PROCINST"/>
+      <Level name="Status" column="STATUS" uniqueMembers="true"/>
+      <Level name="Instance Name" column="NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+
+  <Dimension name="ResourceByBirthday">
+    <Hierarchy hasAll="true" allMemberName="All Resources" primaryKey="RSRC_ID">
+      <Table name="BPM_RSRC_DIM"/>
+      <Level name="birthday" column="BIRTHDAY" uniqueMembers="true"/>
+      <Level name="resource name" column="RSRC_NAME" uniqueMembers="true">
+        <Property name="gender" column="GENDER" type="Numeric"/>
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  
+  <Dimension name="ResourceByGender">
+    <Hierarchy hasAll="true" allMemberName="All Resources" primaryKey="RSRC_ID">
+      <Table name="BPM_RSRC_DIM"/>
+      <Level name="gender" column="GENDER" uniqueMembers="true"/>
+      <Level name="resource name" column="RSRC_NAME" uniqueMembers="true">
+        <Property name="birthday" column="BIRTHDAY" type="Numeric"/>
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  
+  <Dimension name="ResourceByDepartment">
+  	<Hierarchy hasAll="true" allMemberName="All Resources" primaryKey="RSRC_ID">
+  		<Table name="BPM_RSRC_DIM"/>
+  		<Level name="dept" column="DEPT_NAME" uniqueMembers="true"/>
+  		<Level name="resource name" column="RSRC_NAME" uniqueMembers="true">
+  		</Level>
+  	</Hierarchy>
+  </Dimension>
+ 
+<!-- 
+  <Dimension name="ResourceByTime">
+  	<Hierarchy hasAll="true" allMemberName="All Resources" primaryKey="INST_ID">
+  		<Table name="BPM_PRFM_FACT_2006"/>
+  		<Level name="Time Periods" column="MODTIME" uniqueMembers="true"/>
+  		<Level name="Process Name" column="DEF_NAME" uniqueMembers="true"/>
+  		<Level name="Activity Name" column="ACT_NAME" uniqueMembers="true"/>
+  	</Hierarchy>
+  </Dimension>
+  
+  -->
+
+  <Dimension name="Time">
+    <Hierarchy hasAll="true" primaryKey="TIME_ID">
+      <Table name="BPM_TIME_DIM"/>
+      <Level name="Year" column="YR" type="Numeric" uniqueMembers="true" levelType="TimeYears"/>
+      <Level name="Quarter" column="QUTR" uniqueMembers="false" levelType="TimeQuarters"/>
+      <Level name="Month" column="MNTH" uniqueMembers="false" type="Numeric" levelType="TimeMonths"/>
+      <Level name="Day" column="DAY" uniqueMembers="false" type="Numeric" levelType="TimeDays"/>
+    </Hierarchy>
+  </Dimension>
+
+  <Dimension name="Deadline Hit">
+  	<Hierarchy hasAll="false" primaryKey="DEADLN_ID">
+  		<Table name="BPM_DEADLN_DIM" />
+  		<Level name="DeadlnHit" column="DEADLN_DESC" uniqueMembers="true" />
+  	</Hierarchy>
+  </Dimension>
+
+  <Dimension name="Process Definition">
+    <Hierarchy hasAll="true" primaryKey="DEF_ID">
+      <Table name="BPM_PRFM_FACT_2006"/>
+      <Level name="DefName" column="DEF_NAME" uniqueMembers="true"/>
+      <Level name="ActName" column="ACT_NAME" uniqueMembers="true"/>
+      <Level name="ModTime" column="MODTIME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+
+
+<Cube name="Performance">
+  <Table name="BPM_PRFM_FACT_2006"/>
+  <DimensionUsage name="InstanceByDefinition" source="InstanceByDefinition" foreignKey="ROOTINST_ID"/>
+  <DimensionUsage name="InstanceByBusinessStatus" source="InstanceByBusinessStatus" foreignKey="ROOTINST_ID"/>
+  <DimensionUsage name="InstanceByStatus" source="InstanceByStatus" foreignKey="ROOTINST_ID"/>
+  <DimensionUsage name="ResourceByBirthday" source="ResourceByBirthday" foreignKey="RSRC_ID"/>
+  <DimensionUsage name="ResourceByGender" source="ResourceByGender" foreignKey="RSRC_ID"/>
+  <DimensionUsage name="ResourceByDepartment" source="ResourceByDepartment" foreignKey="RSRC_ID"/>
+<!--  <DimensionUsage name="ResourceByTime" source="ResourceByTime" foreignKey="INST_ID"/-->
+  <DimensionUsage name="Process Definition" source="Process Definition" foreignKey="DEF_ID"/>
+  <DimensionUsage name="Time" source="Time" foreignKey="TIME_ID"/>
+  <DimensionUsage name="Deadline Hit" source="Deadline Hit" foreignKey="DEADLNHT"/>
+
+  
+  <Measure name="Count" column="PRSNGTIME" aggregator="count" formatString="#,###.00"/>
+  <Measure name="Processing Time (Sum)" column="PRSNGTIME" aggregator="sum" formatString="#,###.00"/>
+  <Measure name="Processing Time (Avg)" column="PRSNGTIME" aggregator="avg" formatString="#,###.00"/>
+  <Measure name="Cost" column="COST" aggregator="sum" formatString="#,###.00"/>
+</Cube>
+
+
+</Schema>

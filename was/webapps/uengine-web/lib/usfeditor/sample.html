@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel='stylesheet' type='text/css' href='../jquery/css/cupertino/jquery-ui-1.8.7.custom.css' /> 
+		<script type='text/javascript' src='../jquery/jquery-1.4.4.js'></script>
+		<script type='text/javascript' src='../jquery/jquery-ui-1.8.7.custom.min.js'></script>
+		<script type='text/javascript' src='../jquery/jcalendar.js'></script>
+		<script type='text/javascript' src='../jquery/i18n/jquery-ui-i18n.js'></script>
+		<script type='text/javascript' src='../jquery/jquery.cookie.js'></script>
+		<script type='text/javascript' src='../jquery/ajaxfileupload.js'></script>
+		
+		<link rel='stylesheet' type='text/css' href='./usfeditor.css' />
+		<script type='text/javascript' src='./usfeditor.js'></script>
+	
+		<script>
+			
+			$(function() {
+				simpleEditor = new SimpleEditor({textWidth:"100%", textareaHeight:"60", editBtn:'편집', fieldViewModeTitle:'읽기전용', url : "http://localhost:8080/uengine-web"});
+				simpleEditor.renderToDiv('simple_editor');
+			});
+			
+			function viewHtml() {
+				var contents = simpleEditor.getContents();
+				//document.write(contents);
+				alert(contents);
+				$("#view").html(contents);
+			}
+		</script>
+	</head>
+	<body>
+	<div id="simple_editor"></div>
+	<input type="button" name="html" value="Preview" onclick="viewHtml()" />
+    <div id="view"></div>
+	</body>
+</html>

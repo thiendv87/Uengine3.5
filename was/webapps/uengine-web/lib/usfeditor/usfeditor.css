@@ -1,0 +1,16 @@
+#simple_editor li { list-style-type:none; }
+#simple_editor {font-family:'돋움','굴림',dotum,gulim; font-size:12px;}
+#simple_editor input{background:#fff; border:1px solid #ccc;}
+
+.ui-sortable{ position:relative; }
+#editGroupArea {position:absolute; top:-12px; background:#FFF; padding:0 10px; width:auto;}
+#groupArea{ padding-top:20px;}
+
+#uEngineSimpleFormEditor { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#uEngineSimpleFormEditor li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 0.8em; height: 100px }
+.ui-state-highlight { height: 3.5em; line-height: 3.2em; }
+.ui-state-default{padding:10px; margin-bottom:15px; background:#F5F5F5; border:1px solid #ccc;}
+#editGroupArea{margin-bottom:10px;}
+#attributeArea{margin-bottom:10px; margin-top:10px;}
+#menuArea a {margin-right:5px;}
+#rowEditFieldArea{margin:3px 0;}

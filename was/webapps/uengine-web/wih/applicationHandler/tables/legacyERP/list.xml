@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.0_01" class="java.beans.XMLDecoder"> 
+ <object class="java.util.ArrayList"> 
+  <void method="add"> 
+   <string>BONUS</string> 
+  </void> 
+  <void method="add"> 
+   <string>DEPARTMENT</string> 
+  </void> 
+  <void method="add"> 
+   <string>DEPT</string> 
+  </void> 
+  <void method="add"> 
+   <string>EMP</string> 
+  </void> 
+  <void method="add"> 
+   <string>MASTER</string> 
+  </void> 
+  <void method="add"> 
+   <string>ORDERMASTER</string> 
+  </void> 
+  <void method="add"> 
+   <string>ORDERSUB</string> 
+  </void> 
+  <void method="add"> 
+   <string>SALES</string> 
+  </void> 
+  <void method="add"> 
+   <string>SALGRADE</string> 
+  </void> 
+  <void method="add"> 
+   <string>SUB</string> 
+  </void> 
+  <void method="add"> 
+   <string>TRADINGPARTNER</string> 
+  </void> 
+  <void method="add"> 
+   <string>WORKLIST</string> 
+  </void> 
+ </object> 
+</java> 

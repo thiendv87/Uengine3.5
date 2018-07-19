@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<xform style="manual">
+<table border="1" cellspacing="0" cellpadding="2">
+
+ <tr>
+  <th colspan="2" class="xform-title">
+   <table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+     <th align="left" class="xform-title">
+      Chart Properties
+     </th>
+     <td align="right" class="xform-close-button">
+      <imgButton src="wcf/form/cancel.png" action="revert" label="Close" hide="true" handler="com.tonbeller.wcf.form.ButtonHandler"/>
+     </td>
+    </tr>
+   </table>
+  </th>
+ </tr>
+
+ <tr>
+  <td>Chart Type</td>
+  <td>
+   <listBox1 type="string" modelReference="chartType">
+	<listItem value="Area2D" label="Area 2D"/>
+	<listItem value="MSColumn2D" label="Bar 2D"/>
+	<listItem value="MSColumn3D" label="Bar 3D"/>
+	<listItem value="Doughnut2D" label="Doughnut 2D"/>
+	<listItem value="Funnel" label="Funnel"/>
+	<listItem value="Line" label="Line"/>
+	<listItem value="Pie2D" label="Pie 2D"/>
+	<listItem value="Pie3D" label="Pie 3D"/>
+	<listItem value="MSArea2D" label="Multi Series Area 2D"/>
+	<listItem value="MSLine" label="Multi Series Line"/>
+	<listItem value="StackedArea2D" label="Stacked Area 2D"/>
+	<listItem value="StackedBar2D" label="Stacked Bar 2D"/>
+	<listItem value="StackedColumn2D" label="Stacked Column 2D"/>
+	<listItem value="StackedColumn3D" label="Stacked Column 3D"/>
+	<listItem value="Guage" label="Guage"/>
+   </listBox1>
+  </td>
+ </tr>
+
+ <tr>
+  <td>Chart Title</td>
+  <td>
+   <textField type="string" modelReference="chartTitle" size="30" title="enter a title for this chart"/>
+  </td>
+ </tr>
+
+ <tr>
+  <td>Chart Height</td>
+  <td>
+   <textField type="posint" modelReference="chartHeight" size="5" title="enter height in pixels - default 300"/>
+   &#160;&#160;&#160;Chart Width
+   <textField type="posint" modelReference="chartWidth" size="5" title="enter width in pixels - default 500"/>
+  </td>
+ </tr>
+ 
+ <!-- tr>
+  <td>Chart X Axis Name</td>
+  <td>
+   <textField type="string" modelReference="xAxisName" size="30" title="enter a X axis name"/>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td>Chart Y Axis Name</td>
+  <td>
+   <textField type="string" modelReference="yAxisName" size="30" title="enter a Y axis name"/>
+  </td>
+ </tr-->
+ 
+ <tr>
+  <td>Background (R, G, B)</td>
+  <td>
+   <textField type="posint" modelReference="bgColorR" size="4" title="enter Red value 0-255"/>
+   <textField type="posint" modelReference="bgColorG" size="4" title="enter Green value 0-255"/>
+   <textField type="posint" modelReference="bgColorB" size="4" title="enter Blue value 0-255"/>
+  </td>
+ </tr>
+ 
+ <tr>
+ 	<!--td>KPI Settings</td>
+ 	<td>
+ 		<table border="1" cellspacing="0" cellpadding="2">
+ 			<tr>
+ 				<td></td>
+ 				<td>Label</td>
+ 				<td>Value</td>
+ 			</tr>
+ 			<tr>
+ 				<td>Level1</td>
+ 				<td>
+ 					<textField type="string" modelReference="level1Label" size="4"/>
+ 				</td>
+ 				<td>
+ 					<textField type="double" modelReference="level1Value" size="4"/>
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td>Level2</td>
+ 				<td>
+ 					<textField type="string" modelReference="level2Label" size="4"/>
+ 				</td>
+ 				<td>
+ 					<textField type="double" modelReference="level2Value" size="4"/>
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td>Level3</td>
+ 				<td>
+ 					<textField type="string" modelReference="level3Label" size="4"/>
+ 				</td>
+ 				<td>
+ 					<textField type="double" modelReference="level3Value" size="4"/>
+ 				</td>
+ 			</tr>
+ 		</table>
+ 	</td-->
+ 	
+ 	<td>Guage Chart Setting</td>
+ 	<td>
+ 	<table border="1" cellspacing="0" cellpadding="2">
+ 			<tr>
+ 				<td>Min Value</td>
+ 				<td>
+ 					<textField type="string" modelReference="min" size="4"/>
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td>Max Value</td>
+ 				<td>
+ 					<textField type="string" modelReference="max" size="4"/>
+ 				</td> 				
+ 			</tr>
+ 	</table>
+ 	</td>
+ </tr>
+ 
+ <tr>
+  <td>Time Window</td>
+  	<td>Day <textField type="string" modelReference="timeWindow" size="4"/></td>  	
+ </tr> 	
+
+ <tr>
+  <td align="right" colspan="4">
+    <button action="validate" label="OK" handler="com.tonbeller.wcf.form.ButtonHandler" hide="true"/>
+    <button action="revert" label="Cancel" handler="com.tonbeller.wcf.form.ButtonHandler" hide="true"/>
+  </td>
+ </tr>
+
+</table>
+
+</xform>

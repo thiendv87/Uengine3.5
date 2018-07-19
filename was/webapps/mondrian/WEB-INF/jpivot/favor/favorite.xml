@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<xform style="manual">
+<tr>
+	<td>
+   Give A Name:    <textField type="string" modelReference="name" size="4" title="Name"/>
+  </td>
+  <td>
+    <button action="validate" label="OK" handler="com.tonbeller.wcf.form.ButtonHandler" hide="true"/>
+    <button action="revert" label="Cancel" handler="com.tonbeller.wcf.form.ButtonHandler" hide="true"/>
+  </td>
+</tr>
+
+</xform>

@@ -1,0 +1,42 @@
+#var-outer {
+    position:relative;
+	float:left;
+	top:-3px;
+}
+
+#var-inner {
+	position:absolute;
+    width:17px;
+	float:left;
+	top:-3px;
+}
+
+#var-inner-week {
+    position:absolute;
+    width:100%;
+    float:left;
+    top:-3px;
+    left:0px;
+}
+
+/* ie6 */
+*html #var-inner {
+	left:-4px;
+}
+
+*html #var-inner-week {
+    left:0px;
+}
+
+/* safari only \\*/
+body:first-of-type #var-inner{
+ 	left:-4px;
+}
+
+body:first-of-type #var-inner-week{
+    left:0px;
+}
+
+
+
+

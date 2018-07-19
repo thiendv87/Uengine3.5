@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.0_01" class="java.beans.XMLDecoder"> 
+ <object class="org.metaworks.Table"> 
+  <void property="fieldDescriptors"> 
+   <array class="org.metaworks.FieldDescriptor" length="4"> 
+    <void index="0"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>NO</string> 
+      </void> 
+      <void property="name"> 
+       <string>NO</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="1"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>APPLICATION</string> 
+      </void> 
+      <void property="name"> 
+       <string>APPLICATION</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="2"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>DUEDATE</string> 
+      </void> 
+      <void property="name"> 
+       <string>DUEDATE</string> 
+      </void> 
+      <void property="type"> 
+       <int>91</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="3"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>PRIORITY</string> 
+      </void> 
+      <void property="name"> 
+       <string>PRIORITY</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="fullKeyMode"> 
+   <boolean>true</boolean> 
+  </void> 
+  <void property="name"> 
+   <string>WORKLIST</string> 
+  </void> 
+  <void id="AbstractPropertyDescriptorArray0" property="propertyDescriptors"/> 
+  <void property="propertyDescriptors"> 
+   <object idref="AbstractPropertyDescriptorArray0"/> 
+  </void> 
+ </object> 
+</java> 

@@ -1,0 +1,16 @@
+
+<%!
+	interface TroubleTicket extends IDAO{
+			Number getRegNo();
+			void setRegNo(Number regNo);
+			String getProblemDesc();
+			void setProblemDesc(String troubleDesc);
+			String getProblemType();
+			void setProblemType(String troubleClass);
+			String getResolution();
+			void setResolution(String resolution);
+			Number getInstId();
+			void setInstId(Number instId);
+	}
+
+%>

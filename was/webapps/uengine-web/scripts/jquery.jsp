@@ -1,0 +1,2 @@
+<link rel='stylesheet' type='text/css' href='<%=org.uengine.kernel.GlobalContext.WEB_CONTEXT_ROOT %>/lib/jquery/css/redmond/jquery-ui-1.7.2.custom.css' />
+<script type='text/javascript' src='<%=org.uengine.kernel.GlobalContext.WEB_CONTEXT_ROOT %>/lib/jquery/jquery-1.4.2.min.js'></script>

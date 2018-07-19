@@ -1,0 +1,11 @@
+public class UnpayedUserQueryService {
+
+    public String getUnpayedFact(String sid) {
+       if("7709211907315".equals(sid)){
+        return "미납금 정보가 존재합니다: LG Telecom (019-xxx-xxxx)";
+       }else{
+	return "NO RECORD";
+       }
+    }
+
+}

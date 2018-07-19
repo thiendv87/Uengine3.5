@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.0_01" class="java.beans.XMLDecoder"> 
+ <object class="org.metaworks.Table"> 
+  <void property="fieldDescriptors"> 
+   <array class="org.metaworks.FieldDescriptor" length="3"> 
+    <void index="0"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>ID</string> 
+      </void> 
+      <void property="name"> 
+       <string>ID</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="1"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>NAME</string> 
+      </void> 
+      <void property="name"> 
+       <string>NAME</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="2"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>MASTER</string> 
+      </void> 
+      <void property="inputter"> 
+       <object class="org.metaworks.inputter.TableReferenceInput"> 
+        <void property="referenceFieldName"> 
+         <string>ID</string> 
+        </void> 
+        <void property="referenceTable"> 
+         <object class="org.metaworks.Table"> 
+          <void property="componentName"> 
+           <string>tables.legacyERP.MASTER</string> 
+          </void> 
+          <void id="FieldDescriptorArray0" property="fieldDescriptors"/> 
+          <void property="fieldDescriptors"> 
+           <object idref="FieldDescriptorArray0"/> 
+          </void> 
+          <void id="AbstractPropertyDescriptorArray0" property="propertyDescriptors"/> 
+          <void property="propertyDescriptors"> 
+           <object idref="AbstractPropertyDescriptorArray0"/> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="name"> 
+       <string>MASTER</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="fullKeyMode"> 
+   <boolean>true</boolean> 
+  </void> 
+  <void property="name"> 
+   <string>SUB</string> 
+  </void> 
+  <void id="AbstractPropertyDescriptorArray1" property="propertyDescriptors"/> 
+  <void property="propertyDescriptors"> 
+   <object idref="AbstractPropertyDescriptorArray1"/> 
+  </void> 
+ </object> 
+</java> 

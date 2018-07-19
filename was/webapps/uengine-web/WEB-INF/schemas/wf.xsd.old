@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wf="http://www.uengine.org/workflow-ws/schemas"
+	targetNamespace="http://www.uengine.org/workflow-ws/schemas"
+	elementFormDefault="qualified">
+	
+	<element name="PutRoleMappingRequest">
+		<complexType>
+			<sequence>
+				<element name="instanceId" type="string" />
+				<element name="roleName" type="string" />
+				<element name="endpoints">
+					<complexType>
+						<sequence>
+							<element name="endpoint" type="string" minOccurs="1" maxOccurs="unbounded" />
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="PutRoleMappingResponse"  type="string" />
+
+	<element name="StartProcessRequest">
+		<complexType>
+			<sequence>
+				<element name="type" type="string" />
+				<element name="alias" type="string" />
+				<element name="initiator" type="string" />
+				<element name="processVariable" type="wf:ProcessVariable"
+					minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="StartProcessResponse">
+		<complexType>
+			<sequence>
+				<element name="newInstanceId" type="string" />
+				<element name="nextTask" type="wf:NextTask" minOccurs="0"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="NextTask">
+		<sequence>
+			<element name="endpoint" type="string" />
+			<element name="instanceId" type="string" />
+			<element name="rootInstanceId" type="string" />
+			<element name="taskId" type="string" />
+			<element name="tracingTag" type="string" />
+			<element name="info" type="string" />
+		</sequence>
+	</complexType>
+
+	<element name="GetWorkListRequest">
+		<complexType>
+			<sequence>
+				<element name="endpoint" type="string" />
+				<element name="filter" type="string" />
+				<element name="pageCount" type="string" />
+				<element name="currentPage" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="GetWorkListResponse">
+		<complexType>
+			<sequence>
+				<element name="totalCount" type="string" />
+				<element name="workList" type="wf:WorkList" minOccurs="0"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="WorkList">
+		<sequence>
+			<element name="endpoint" type="string" />
+			<element name="instanceId" type="string" />
+			<element name="rootInstanceId" type="string" />
+			<element name="taskId" type="string" />
+			<element name="tracingTag" type="string" />
+			<element name="title" type="string" />
+			<element name="defName" type="string" />
+			<element name="startDate" type="string" />
+			<element name="duplicateTaskCount" type="string" />
+			<element name="info" type="string" />
+		</sequence>
+	</complexType>
+
+	<complexType name="ProcessVariable">
+		<sequence>
+			<element name="key" type="string" />
+			<element name="value" type="string" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<element name="CompleteWorkitemRequest">
+		<complexType>
+			<sequence>
+				<element name="endpoint" type="string" />
+				<element name="instanceId" type="string" />
+				<element name="taskId" type="string" />
+				<element name="tracingTag" type="string" />
+				<element name="processVariable" type="wf:ProcessVariable"
+					minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="CompleteWorkitemResponse">
+		<complexType>
+			<sequence>
+				<element name="completedTaskId" type="string" />
+				<element name="nextTask" type="wf:NextTask" minOccurs="0"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="SetProcessVariableRequest">
+		<complexType>
+			<sequence>
+				<element name="instanceId" type="string" />
+				<element name="processVariable" type="wf:ProcessVariable"
+					minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="SetProcessVariableResponse" type="string" />
+
+
+	<element name="WorkItemAcceptRequest">
+		<complexType>
+			<sequence>
+				<element name="instanceId" type="string" />
+				<element name="tracingTag" type="string" />
+				<element name="endpoint" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="WorkItemAcceptResponse" type="string" />
+
+</schema>

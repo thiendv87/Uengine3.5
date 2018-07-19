@@ -1,0 +1,93 @@
+.topbar {
+	FONT-SIZE: 8pt; COLOR: #ffffff; BACKGROUND-COLOR: #3366cc
+}
+.topbar A:link {
+	COLOR: #ffffff
+}
+.topbar A:visited {
+	COLOR: #cccccc
+}
+.userbar {
+	FONT-SIZE: 8pt; COLOR: #3366cc; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #cccccc; BORDER-BOTTOM-STYLE: none
+}
+.actionsbox {
+	FONT-SIZE: 8pt; BACKGROUND-IMAGE: none; BACKGROUND-REPEAT: no-repeat
+}
+.actionsbox TH {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 9pt; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: #3366cc 1px solid; TEXT-ALIGN: left
+}
+BODY {
+	FONT-SIZE: 9pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif;
+}
+TABLE {
+	FONT-SIZE: 9pt
+}
+.actionsbox TD {
+	PADDING-LEFT: 5px
+}
+.quotebox {
+	FONT-SIZE: 8pt; FONT-STYLE: italic
+}
+TABLE.quotebox {
+	BORDER-RIGHT: black 0px dashed; BORDER-TOP: black 0px dashed; BORDER-LEFT: #3366cc 1px dashed; BORDER-BOTTOM: black 0px dashed
+}
+.breadcrumbs {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: #3366cc 1px solid
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt
+}
+.sidebar {
+	BACKGROUND-IMAGE: url(../ImageAssets/backgrounds/bigz.png); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #cccccc
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.biobox {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: #3366cc 1px solid
+}
+.biobox H2 {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; FONT-STYLE: italic
+}
+.biobox H1 {
+	MARGIN-BOTTOM: 5px
+}
+.homeboxes {
+	BORDER-RIGHT: #3366cc 1px solid; BACKGROUND-POSITION: center center; BORDER-TOP: black 0px solid; BACKGROUND-IMAGE: url(ImageAssets/home_images/bigzbg.gif); BORDER-LEFT: #3366cc 1px solid; BORDER-BOTTOM: black 0px solid; BACKGROUND-REPEAT: no-repeat
+}
+.homeboxes TH {
+	BORDER-RIGHT: black 0px dashed; BORDER-TOP: black 0px dashed; FONT-WEIGHT: bold; FONT-SIZE: 10pt; BORDER-LEFT: black 0px dashed; PADDING-TOP: 10px; BORDER-BOTTOM: #3366cc 1px dashed; TEXT-ALIGN: left
+}
+.hometopbar {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; BACKGROUND-COLOR: #000000
+}
+.hometopbar A:link {
+	COLOR: #ffffff
+}
+.hometopbar A:visited {
+	COLOR: #cccccc
+}
+.sideboxes {
+	BORDER-RIGHT: #3366cc 1px solid; BORDER-TOP: black 0px solid; BORDER-LEFT: #3366cc 1px solid; BORDER-BOTTOM: black 0px solid
+}
+.copyright {
+	FONT-SIZE: 8pt; COLOR: #ffffff; BACKGROUND-COLOR: #3366cc
+}
+.copyright A:link {
+	COLOR: #ffffff
+}
+.copyright A:visited {
+	COLOR: #cccccc
+}
+.topstest {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND-COLOR: #ffffff
+}
+.quotebox LI {
+	LIST-STYLE-POSITION: outside; FONT-SIZE: 8pt; FONT-STYLE: italic; LIST-STYLE-TYPE: square
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}

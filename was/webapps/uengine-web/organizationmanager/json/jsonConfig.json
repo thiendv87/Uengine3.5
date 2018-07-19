@@ -1,0 +1,5 @@
+{ identifier : 'code', label : 'name', items: [
+	{code : "root", name : "Organization Tree", type : "root", children : [
+		{code : "temp", name : "tempChildrenForItem", type : "temp"}
+	]}
+] }

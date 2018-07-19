@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='연간 청구금액 변동추이' yAxisMinValue='2000000' yAxisMaxValue='2500000' baseFont='굴림' numberPrefix='\' showValues='0' alternateHGridColor='FCB541' alternateHGridAlpha='20' divLineColor='FCB541' divLineAlpha='50' canvasBorderColor='666666' baseFontColor='666666' lineColor='FCB541' baseFontSize='12'>
+	<set label='2005' value='2223630' />
+	<set label='2006' value='2255300' />
+	<set label='2007' value='2226663' />
+	<set label='2008' value='2227568' />
+
+	<styles>
+		<definition>
+			<style name='Anim1' type='animation' param='_xscale' start='0' duration='1' />
+			<style name='Anim2' type='animation' param='_alpha' start='0' duration='0.6' />
+			<style name='DataShadow' type='Shadow' alpha='40'/>
+		</definition>
+		<application>
+			<apply toObject='DIVLINES' styles='Anim1' />
+			<apply toObject='HGRID' styles='Anim2' />
+			<apply toObject='DATALABELS' styles='DataShadow,Anim2' />
+	</application>	
+	</styles>
+
+</chart> 

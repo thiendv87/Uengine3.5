@@ -1,0 +1,27 @@
+
+.glt-elm{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    color: #fff1;
+  font-family: Arial, sans-serif;
+    opacity: 0.9;
+    visibility: hidden;
+}
+
+.glt-elm p{
+    background: #DBEAFB;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.glt-elm img{
+    display: block;
+}
+
+/* and this CSS for IE, if you want to use transparency: */
+
+.glt-elm{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+}

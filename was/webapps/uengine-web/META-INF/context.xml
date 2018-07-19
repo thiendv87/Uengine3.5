@@ -1,0 +1,14 @@
+<!--
+
+    Context configuration file for the Tomcat Balancer Web App
+    This is only needed to keep the distribution small and avoid duplicating
+    commons libraries
+
+    $Id: context.xml,v 1.1 2008/04/11 03:56:05 curonide Exp $
+
+-->
+
+
+<Context privileged="true" antiResourceLocking="false" antiJARLocking="false" >
+    <ResourceLink global="jdbc/uEngineDS" name="jdbc/uEngineDS" type="javax.sql.DataSource"/>
+</Context>

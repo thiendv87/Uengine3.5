@@ -1,0 +1,83 @@
+
+{ identifier: 'id',
+  label: 'name',
+  items: [
+
+{ id:'176', name:'업무요청관리', type:'process', parent:'144'
+},
+{ id:'312', name:'주간작업내역작성', type:'folder', parent:'229'
+,children:[{_reference:'310'}]},
+{ id:'211', name:'결산작업프로세스', type:'folder', parent:'210'
+,children:[{_reference:'212'},{_reference:'213'}]},
+{ id:'342', name:'채용품의', type:'folder', parent:'226'
+,children:[{_reference:'357'}]},
+{ id:'3', name:'컨설팅프로세스', type:'folder', parent:'228'
+},
+{ id:'41', name:'세미나접수', type:'folder', parent:'226'
+,children:[{_reference:'42'},{_reference:'45'}]},
+{ id:'222', name:'HomePage Processes', type:'main', parent:'-1'
+,children:[{_reference:'226'},{_reference:'227'}]},
+{ id:'210', name:'금융', type:'folder', parent:'230'
+,children:[{_reference:'211'}]},
+{ id:'326', name:'유엔진설치 프로세스', type:'process', parent:'325'
+},
+{ id:'230', name:'Demo Process', type:'main', parent:'-1'
+,children:[{_reference:'161'},{_reference:'210'}]},
+{ id:'122', name:'응대시간결정', type:'form', parent:'120'
+},
+{ id:'213', name:'K/IFRS 결산 작업 메인 프로세스', type:'process', parent:'211'
+},
+{ id:'228', name:'고객관리', type:'folder', parent:'223'
+,children:[{_reference:'3'}]},
+{ id:'227', name:'Member', type:'folder', parent:'222'
+,children:[{_reference:'117'}]},
+{ id:'121', name:'컨설팅 요청', type:'form', parent:'120'
+},
+{ id:'124', name:'요청응대', type:'form', parent:'120'
+},
+{ id:'158', name:'전화개통프로세스', type:'process', parent:'161'
+},
+{ id:'45', name:'세미나접수', type:'process', parent:'41'
+},
+{ id:'120', name:'Forms', type:'folder', parent:'117'
+,children:[{_reference:'121'},{_reference:'122'},{_reference:'123'},{_reference:'124'}]},
+{ id:'161', name:'전화개통프로세스', type:'folder', parent:'230'
+,children:[{_reference:'158'}]},
+{ id:'136', name:'교육프로세스', type:'process', parent:'75'
+},
+{ id:'229', name:'업무관리', type:'folder', parent:'223'
+,children:[{_reference:'144'},{_reference:'312'}]},
+{ id:'226', name:'Guest', type:'folder', parent:'222'
+,children:[{_reference:'41'},{_reference:'75'},{_reference:'178'},{_reference:'325'},{_reference:'342'}]},
+{ id:'125', name:'컨설팅 요청', type:'process', parent:'117'
+},
+{ id:'178', name:'질문접수 프로세스', type:'folder', parent:'226'
+,children:[{_reference:'231'}]},
+{ id:'357', name:'입사지원', type:'process', parent:'342'
+},
+{ id:'75', name:'유엔진교육', type:'folder', parent:'226'
+,children:[{_reference:'136'}]},
+{ id:'42', name:'Forms', type:'folder', parent:'41'
+,children:[{_reference:'43'}]},
+{ id:'43', name:'세미나접수', type:'form', parent:'42'
+},
+{ id:'144', name:'업무요청프로세스', type:'folder', parent:'229'
+,children:[{_reference:'176'}]},
+{ id:'231', name:'문의(버그)접수 프로세스', type:'process', parent:'178'
+},
+{ id:'325', name:'유엔진 설치', type:'folder', parent:'226'
+,children:[{_reference:'326'}]},
+{ id:'123', name:'응대시간승인', type:'form', parent:'120'
+},
+{ id:'212', name:'K/IFRS 결산 작업 프로세스', type:'process', parent:'211'
+},
+{ id:'117', name:'컨설팅 요청', type:'folder', parent:'227'
+,children:[{_reference:'120'},{_reference:'125'}]},
+{ id:'223', name:'Work Processes', type:'main', parent:'-1'
+,children:[{_reference:'228'},{_reference:'229'}]},
+{ id:'310', name:'업무정재요청', type:'process', parent:'312'
+}
+
+
+
+]}

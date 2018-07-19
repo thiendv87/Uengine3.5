@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.0_01" class="java.beans.XMLDecoder"> 
+ <object class="org.metaworks.DefaultApplication"> 
+  <void property="table"> 
+   <object class="org.metaworks.Table"> 
+    <void property="componentName"> 
+     <string>tables.legacyERP.ORDERMASTER</string> 
+    </void> 
+    <void id="FieldDescriptorArray0" property="fieldDescriptors"/> 
+    <void property="fieldDescriptors"> 
+     <object idref="FieldDescriptorArray0"/> 
+    </void> 
+    <void id="AbstractPropertyDescriptorArray0" property="propertyDescriptors"/> 
+    <void property="propertyDescriptors"> 
+     <object idref="AbstractPropertyDescriptorArray0"/> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

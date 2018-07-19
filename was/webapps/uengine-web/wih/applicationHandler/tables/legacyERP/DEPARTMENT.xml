@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.4.0_01" class="java.beans.XMLDecoder"> 
+ <object class="org.metaworks.Table"> 
+  <void property="fieldDescriptors"> 
+   <array class="org.metaworks.FieldDescriptor" length="3"> 
+    <void index="0"> 
+     <object id="FieldDescriptor0" class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>NAME</string> 
+      </void> 
+      <void property="name"> 
+       <string>NAME</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="1"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>CONTACT</string> 
+      </void> 
+      <void property="name"> 
+       <string>CONTACT</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void index="2"> 
+     <object class="org.metaworks.FieldDescriptor"> 
+      <void property="displayName"> 
+       <string>CONTACTNAME</string> 
+      </void> 
+      <void property="name"> 
+       <string>CONTACTNAME</string> 
+      </void> 
+      <void property="type"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="keyFieldDescriptor"> 
+   <object idref="FieldDescriptor0"/> 
+  </void> 
+  <void property="name"> 
+   <string>DEPARTMENT</string> 
+  </void> 
+  <void id="AbstractPropertyDescriptorArray0" property="propertyDescriptors"/> 
+  <void property="propertyDescriptors"> 
+   <object idref="AbstractPropertyDescriptorArray0"/> 
+  </void> 
+ </object> 
+</java> 

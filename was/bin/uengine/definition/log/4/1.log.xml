@@ -1,0 +1,37 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = Make Issue(1)
+ * instance = 4
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=4&tracingTag=1&defVerId=3
+   --- [Set Role] --------------------
+    * name : Initiator
+    * value : <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>bosang Kim</resourceName>
+  <emailAddress></emailAddress>
+  <endpoint>KBS</endpoint>
+  <companyId>uEngine</companyId>
+  <groupId>architect</groupId>
+  <title></title>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <birthday>2011-01-13 16:08:07.875 KST</birthday>
+  <isGroup>false</isGroup>
+  <locale>en</locale>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+   -----------------------------------
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = Make Issue(1)
+ * instance = 4
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=4&tracingTag=1&defVerId=3

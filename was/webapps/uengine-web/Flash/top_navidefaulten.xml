@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xmlMenu>
+	<menu1 target="_self" mCount="1" title="WorklList"			link="/uengine-web/processparticipant/worklist/index.jsp" />
+	<menu2 target="_self" mCount="1" title="Participation"			link="/uengine-web/processparticipant/participationProcess/index.jsp" />
+	<menu3 target="_self" mCount="1" title="Process"				link="/uengine-web/processparticipant/index.jsp" />
+	<!-- 
+	<menu3 target="_self" mCount="1" title="Monitor"				link="/uengine-web/monitor/index.jsp" />
+	<menu4 target="_self" mCount="1" title="Process Manager"		link="/uengine-web/processmanager/index.jsp" />
+	 -->
+	
+	<option
+		xMenu="10"
+		yMenu="0"
+		mMenuSpace="11"
+		sMenuSpace="5"
+		mHeight="29"
+		sHeight="29"
+
+		mMenuXscale="95"
+		mMenuYscale="105"
+		sMenuXscale="95"
+		sMenuYscale="110"
+		
+		mBorderView = "1"
+		
+		menuOutColor="FFFFFF"
+		menuOverColor="FFFBD5"
+		subOutColor="27579F"
+		subOverColor="152F55"
+
+		subMargin = "25"
+	/>
+
+</xmlMenu>

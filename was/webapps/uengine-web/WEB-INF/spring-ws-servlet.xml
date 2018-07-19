@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 		
+		   http://www.springframework.org/schema/aop
+		   http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<bean id="activityCompleteEndpoint" class="com.defaultcompany.external.controller.webservices.ActivityCompleteEndpoint" />
+	<bean id="approvalActivityCompleteEndpoint" class="com.defaultcompany.external.controller.webservices.ApprovalActivityCompleteEndpoint" />
+	<bean id="approvalDraftActivityCompleteEndpoint" class="com.defaultcompany.external.controller.webservices.ApprovalDraftActivityCompleteEndpoint" />
+	<bean id="initializeProcessInstanceEndpoint" class="com.defaultcompany.external.controller.webservices.InitializeProcessInstanceEndpoint" />
+	<bean id="processStartEndpoint" class="com.defaultcompany.external.controller.webservices.ProcessStartEndpoint" />
+	<bean id="processStopEndpoint" class="com.defaultcompany.external.controller.webservices.ProcessStopEndpoint" />
+	<bean id="taskInfoEndpoint" class="com.defaultcompany.external.controller.webservices.TaskInfoEndpoint" />
+	<bean id="workItemAcceptEndpoint" class="com.defaultcompany.external.controller.webservices.WorkItemAcceptEndpoint" />
+	<bean id="approvalLineChangeEndpoint" class="com.defaultcompany.external.controller.webservices.ApprovalLineChangeEndpoint" />
+	<bean id="delegateWorkItemEndpoint" class="com.defaultcompany.external.controller.webservices.DelegateWorkItemEndpoint" />
+
+ 
+	<bean class="org.springframework.ws.server.endpoint.mapping.PayloadRootQNameEndpointMapping">
+		<property name="mappings">
+			<props>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}ActivityCompleteRequest">activityCompleteEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}ApprovalActivityCompleteRequest">approvalActivityCompleteEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}ApprovalDraftActivityCompleteRequest">approvalDraftActivityCompleteEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}ApprovalLineChangeRequest">approvalLineChangeEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}InitializeProcessInstanceRequest">initializeProcessInstanceEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}ProcessStartRequest">processStartEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}ProcessStopRequest">processStopEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}TaskInfoRequest">taskInfoEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}WorkItemAcceptRequest">workItemAcceptEndpoint</prop>
+				<prop key="{http://www.uengine.org/workflow-ws/schemas}DelegateWorkItemRequest">delegateWorkItemEndpoint</prop>
+            </props>
+        </property>
+
+		<property name="interceptors">
+			<list>
+				<ref local="loggingInterceptor"/>
+				<ref local="SoapLoggingInterceptor"/>
+			</list>
+		</property>
+    </bean>
+    
+	<bean id="loggingInterceptor" class="org.springframework.ws.server.endpoint.interceptor.PayloadLoggingInterceptor">
+		<property name="logRequest" value="true"/>
+		<property name="logResponse" value="true"/>
+	</bean>
+	<bean id="SoapLoggingInterceptor" class="org.springframework.ws.soap.server.endpoint.interceptor.SoapEnvelopeLoggingInterceptor"/>
+
+    <bean id="workflow" class="org.springframework.ws.wsdl.wsdl11.DynamicWsdl11Definition">
+        <property name="builder">
+            <bean class="org.springframework.ws.wsdl.wsdl11.builder.XsdBasedSoap11Wsdl4jDefinitionBuilder">
+                <property name="schema" value="/WEB-INF/schemas/wf.xsd"/>
+                <property name="portTypeName" value="Workflow"/>
+                <property name="locationUri" value="http://localhost:8080/uengine-web/services"/>
+                <property name="targetNamespace" value="http://www.uengine.org/workflow-ws/schemas"/>
+            </bean>
+        </property>
+    </bean>
+    
+</beans>

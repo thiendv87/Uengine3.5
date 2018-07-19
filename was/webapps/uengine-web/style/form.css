@@ -1,0 +1,44 @@
+
+
+BODY { scrollbar-3dlight-color:#ffffff;
+scrollbar-track-color:#ffffff;
+scrollbar-darkshadow-color:#ffffff;
+scrollbar-face-color:#ffffff;
+scrollbar-highlight-color:#Ffffff;
+scrollbar-shadow-color:#e0e0e0;
+background-color:transparent;}
+
+table{
+border-collapse:collapse
+}
+
+body,td {font-size:12px}
+.inv100c {
+ BORDER-RIGHT: transparent 1px; BORDER-TOP: transparent 1px; FONT-SIZE: 9pt; BORDER-LEFT: transparent 1px; WIDTH: 100%; BORDER-BOTTOM:  2px; FONT-FAMILY: ±¼¸²Ã¼; BACKGROUND-COLOR: #dddddd; TEXT-ALIGN: right
+}
+
+BODY,TD,input,DIV,form,TEXTAREA,center,option,pre,blockquote {font-size:8pt; font-family:verdana; color:#606060; line-height:160%;}
+body {overflow-x:hidden; overflow-y:auto;}
+SELECT {font-size:8pt}
+
+A:link    {color:#606060;text-decoration:none; }
+A:visited {color:#606060;text-decoration:none; }
+A:active  {color:#606060;text-decoration:none; }
+A:hover  {color:#EE7BA6;text-decoration:none; }
+
+.v7 {font-family:verdana;font-size:7pt;color:#606060;}
+.b7 {font-family:verdana;font-size:7pt;color:#606060;}
+.textarea {border:solid 1px #efefef;background-color:transparent; overflow-x:hidden; overflow-y:auto;width:90%;}
+.input {border:solid 1px #efefef;background-color:transparent; line-height:120%;}
+.input2{font-family:verdana;font-size:8pt; border:solid 0; color:ffffff;background-color:transparent;line-height:120%;}
+.table {border: solid 1px #efefef;}
+.commen {border:solid 1px #efefef;background-color:transparent; overflow-x:hidden; overflow-y:auto;}
+.esoline {background-color:#efefef;}
+.num {font-family:verdana; font-size:7pt;color:#606060; line-height:120%;}
+.date {font-family:verdana; font-size:7pt; color=#606060;}
+.esoimg {padding:4px;border-width:1px;border-color:#E9E8E8;border-style:solid}
+
+.submit {border:solid 0;font-family:verdana;font-size:7pt;color:#ffffff;background-color:#EE7BA6;line-height:15px;}
+.com {font-family:verdana; font-size:7pt; color=#EE7BA6;}
+.sub {color:#EE7BA6;}
+

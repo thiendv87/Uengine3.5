@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='가득율 추이(최근1년)' lineThickness='1' showValues='0' formatNumberScale='0' anchorRadius='2' divLineAlpha='20' divLineColor='CC3300' divLineIsDashed='1' showAlternateHGridColor='1' alternateHGridAlpha='5' alternateHGridColor='CC3300' shadowAlpha='40' labelStep="1" numvdivlines='5' chartRightMargin="35" bgColor='FFFFFF,CC3300' bgAngle='270' bgAlpha='10,10' baseFontSize='12'>
+<categories >
+<category label='07.5' />
+<category label='07.6' />
+<category label='07.7' />
+<category label='07.8' />
+<category label='07.9' />
+<category label='07.10' />
+<category label='07.11' />
+<category label='07.12' />
+<category label='08.1' />
+<category label='08.2' />
+<category label='08.3' />
+<category label='08.4' />
+</categories>
+
+<dataset seriesName='장호길' color='1D8BD1' anchorBorderColor='1D8BD1' anchorBgColor='1D8BD1'>
+	<set value='0.789' />
+	<set value='0.798' />
+	<set value='0.879' />
+	<set value='1.189' />
+	<set value='0.889' />
+	<set value='1.389' />
+	<set value='0.978' />
+	<set value='0.798' />
+	<set value='0.879' />
+	<set value='1.189' />
+	<set value='0.889' />
+	<set value='0.989' />
+</dataset>
+
+<dataset seriesName='김진수' color='F1683C' anchorBorderColor='F1683C' anchorBgColor='F1683C'>
+	<set value='0.889' />
+	<set value='0.698' />
+	<set value='1.279' />
+	<set value='1.289' />
+	<set value='1.089' />
+	<set value='0.789' />
+	<set value='0.978' />
+	<set value='1.298' />
+	<set value='1.179' />
+	<set value='0.989' />
+	<set value='0.889' />
+	<set value='0.989' />
+</dataset>
+
+<dataset seriesName='하성태' color='62BDA7' anchorBorderColor='62BDA7' anchorBgColor='62BDA7'>
+	<set value='0.689' />
+	<set value='0.568' />
+	<set value='1.079' />
+	<set value='0.989' />
+	<set value='1.098' />
+	<set value='0.679' />
+	<set value='0.898' />
+	<set value='1.098' />
+	<set value='1.197' />
+	<set value='0.889' />
+	<set value='0.889' />
+	<set value='0.689' />
+</dataset>
+	
+<styles>                
+	<definition>                         
+		<style name='CaptionFont' type='font' size='12'/>
+	</definition>
+	<application>
+		<apply toObject='CAPTION' styles='CaptionFont' />
+		<apply toObject='SUBCAPTION' styles='CaptionFont' />
+	</application>
+</styles>
+
+</chart>

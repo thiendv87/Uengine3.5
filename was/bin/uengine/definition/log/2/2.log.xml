@@ -1,0 +1,80 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+EJBProcessInstance: instanceId is set by 2
+ * Definition administration url = /uengine-web/processmanager/viewProcessFlowChart.jsp?processDefinition=5&processDefinitionVersionID=3
+ * Process Designer launch url = /uengine-web/processmanager/ProcessDesigner.jnlp?defVerId=3&defId=5
+ * Instance administration url = /uengine-web/processmanager/viewProcessInformation.jsp?instanceId=2
+
+ * Initial Variable 'frmmakeisu' = <org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frmmakeisu]@0</formDefId>
+  <filePath>2011\1\13/2_20110113154626546.xml</filePath>
+</org.uengine.contexts.HtmlFormContext>
+ * Initial Variable 'frmsetrp' = <org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frmsetrp]@1</formDefId>
+</org.uengine.contexts.HtmlFormContext>
+ * Initial Variable 'frmisuresult' = <org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frmisuresult]@2</formDefId>
+</org.uengine.contexts.HtmlFormContext>
+ * Initial Variable 'Result' = <null/>
+
+ * Initial RoleMapping 'Initiator' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester_ko</resourceName>
+  <endpoint>test_ko</endpoint>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+ * Initial RoleMapping 'manager' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <name>manager</name>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+  <multipleMappings>
+    <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+      <resourceName>sungwook Hwang</resourceName>
+      <endpoint>HSW</endpoint>
+      <assignType>0</assignType>
+      <dispatchingOption>-1</dispatchingOption>
+      <isMale>true</isMale>
+      <isGroup>false</isGroup>
+      <cursor>0</cursor>
+      <isSingle>false</isSingle>
+    </com.defaultcompany.organization.DefaultCompanyRoleMapping>
+    <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+      <resourceName>jinyoung Jang</resourceName>
+      <endpoint>JJY</endpoint>
+      <assignType>0</assignType>
+      <dispatchingOption>-1</dispatchingOption>
+      <isMale>true</isMale>
+      <isGroup>false</isGroup>
+      <cursor>0</cursor>
+      <isSingle>false</isSingle>
+    </com.defaultcompany.organization.DefaultCompanyRoleMapping>
+    <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+      <resourceName>bosang Kim</resourceName>
+      <endpoint>KBS</endpoint>
+      <assignType>0</assignType>
+      <dispatchingOption>-1</dispatchingOption>
+      <isMale>true</isMale>
+      <isGroup>false</isGroup>
+      <cursor>0</cursor>
+      <isSingle>false</isSingle>
+    </com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  </multipleMappings>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+ * Initial RoleMapping 'rightperson' = <null/>
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = Set Right Person(2)
+ * instance = 2
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=2&tracingTag=2&defVerId=3

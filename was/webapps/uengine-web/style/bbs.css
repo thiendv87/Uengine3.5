@@ -1,0 +1,45 @@
+/********************************************************************************************/
+/*         List Page Navigation														        */
+/********************************************************************************************/
+/* prev, next */
+.pagenavi_txtcell {padding:3 4 0 4;color:#BFBFBF;}
+/* prev, next link */
+.a.pagenavi_txtlnk:link,   a.pagenavi_txtlnk:visited {font-weight:normal;color:#666666; text-decoration: none;}
+.a.pagenavi_txtlnk:active, a.pagenavi_txtlnk:hover {font-weight:normal;color:#666666; text-decoration: underline;}
+
+/* number default */
+.pagenavi_dft_cell {padding:3 8 0 8; color:#ff7800; text-align:center; cursor:hand;}
+/* number currpage */
+.pagenavi_cur_cell {padding:3 8 0 8; color:#ff7800; text-align:center; font-weight:bold;}
+/* number mouseover */
+.pagenavi_ovr_cell {padding:3 8 0 8; color:#ff7800; text-align:center; cursor:hand; background-color:#f7f7f7;}
+/* vertical line */
+.pagenavi_vline {width:1;background:#bfbfbf;}
+
+/* number link */
+.a.pagenavi_lnk:link,   a.pagenavi_lnk:visited {font-weight:normal;color:#666666; text-decoration: none;}
+.a.pagenavi_lnk:active, a.pagenavi_lnk:hover {font-weight:normal;color:#ff7800; text-decoration: underline;}
+
+/* img btn padding */
+.pagenavi_imgpad {padding:1 2 0 0;}
+
+.pagenavi_on {background-color:#f7f7f7;}
+.pagenavi_off {}
+
+/**********************************************************/
+
+
+body {
+	font-size: 10pt;
+}
+
+th {
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+td {
+	font-size: 9pt;
+}

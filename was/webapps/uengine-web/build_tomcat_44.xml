@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!-- ======================================================================= -->
+<!-- JBoss build file                                                       -->
+<!-- ======================================================================= -->
+
+<project name="uEngine-web" default="apply" basedir=".">
+    <property environment="env"/>
+    <property name="was.home" value="${env.WAS_HOME}"/>
+
+	<target name="apply">
+		<copy todir="${was.home}\webapps\ROOT\html\uengine-web">
+			<fileset dir=".">
+	 			<include name="**/*.*"/>
+				<exclude name="build_tomcat_44.xml"/>
+				<exclude name="build_jeus.xml"/>
+				<exclude name="build.xml"/>
+			</fileset>
+		</copy>
+	</target>
+</project>

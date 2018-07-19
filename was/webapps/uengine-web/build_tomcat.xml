@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!-- ======================================================================= -->
+<!-- JBoss build file                                                       -->
+<!-- ======================================================================= -->
+
+<project name="uEngine-web" default="apply" basedir=".">
+    <property environment="env"/>
+    <property name="was.home" value="${env.WAS_HOME}"/>
+
+	<target name="apply" >
+		<copy todir="${was.home}/webapps/uengine-web" overwrite="true">
+			<fileset dir=".">
+	 			<include name="**/*.*"/>
+				<exclude name="build.xml"/>
+			</fileset>
+		</copy>
+	</target>
+</project>
+
+
+

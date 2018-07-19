@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+		"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+	<title>Test disconnect in mouseover</title>
+	<style type="text/css" title="text/css">
+	 	body{
+            margin:0;
+            padding:10px;
+        
+        }
+       
+        .container{
+        	border:3px dotted black;
+        	padding:5px;
+			min-height: 10px;
+        }
+	</style>
+	<script type="text/javascript" src="dojo.js" djConfig="isDebug: true"></script>
+	<script type="text/javascript">
+		
+		dojo.addOnLoad(function(){			
+			var ct = dojo.byId("content");
+			
+			var h1= dojo.connect(ct, "onmousemove", function(){
+				ct.innerHTML +="doThis - ";
+				dojo.disconnect(h2); //disconnect doThat
+			});
+			var h2= dojo.connect(ct, "onmousemove", function(){
+				ct.innerHTML +="doThat - ";
+			});
+		})
+		
+	</script>
+</head>
+	<body>
+		<div id="content" class="container">
+			
+			hover me...
+			
+		</div>
+	</body>
+</html>	

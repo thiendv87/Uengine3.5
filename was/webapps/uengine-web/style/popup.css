@@ -1,0 +1,55 @@
+	@import "/dojo/dojox/grid/_grid/Grid.css";
+	#grid {
+			border: 1px solid #b4b4b4;
+			width: auto;
+			
+			
+		}
+	#grid2 {
+			border: 1px solid #b4b4b4;
+			width: auto;
+			
+			
+		}
+	body{ margin:0 10px;; padding:0; background:#f1f1f1;}
+	a { border:hidden;}
+	#popwrap { margin:0 auto; width:100%;}
+	#toptitle{ width:100%; background:url(../images/Common/PopupTitleBG_R.gif) no-repeat right; height:27px;}
+	#toptitle_error{ width:100%; background:url(../images/Common/PopupTitleBG_R01.gif) no-repeat right; height:27px;}
+	#toptitle span{  width:100%; background:url(../images/Common/PopupTitleBG.gif) no-repeat left; height:100%; font:bold 9pt;  padding:6 10; color:#fff;}
+	#toptitle01 span{  width:100%; background:url(../images/Common/PopupTitleBG01.gif) no-repeat left; height:100%; font:bold 9pt;  padding:6 10; color:#fff;}
+	#popcontaner {width:100%; height:100%; margin:10 0;}
+	#popcontaner .popcontentleft {float:left; width:45%;}
+	#popcontaner .popcontentcenter {float:left; width:30px; height:100%; }
+	#popcontaner .popcontentright {float:left; width:auto;  height:100%; }
+	
+	#popcontaner .popcontentleft .popsearch{height:254px;}
+	#popcontaner .popcontentleft .popsearch .box{ height:205px; border: 1px solid #b4b4b4;	padding:10 10; margin:1px 0 0 2px;	background:#F6F6F6;}
+	#popcontaner .popcontentleft .popsearch .box2{ height:205px; border: 1px solid #b4b4b4;	 margin:1px 0 0 2px;	background:#F6F6F6;}
+	.searchbtn{
+	width:100%;
+	margin:0 100;
+}
+	#popcontaner .popcontentleft .popvalue{
+	height:223px;
+	background: #F5F5F5; border: 1px solid #b4b4b4;
+}
+	
+	#popcontaner .popcontentright .poptopbtn { height:26px;}
+	#popcontaner .popcontentright .poprightvalue{ height:450px; border: 1px solid #b4b4b4; background: #F5F5F5;}
+	
+	#popcontaner .popcontentcenter .popbtn{ position:absolute; padding:330 0 0 10;   margin:0 auto;}
+	
+	#popfooter { width:100%;}
+	.pop1line { width:100%; height:2px}
+	
+.pop_layer11{background:url(../images/Common/k_popbg04_1.gif) 0% 0% no-repeat;padding:40px 0 0 0;width:420px;text-align:left;}
+.pop_layer11 .box{background:url(../images/Common/k_popbg04_1.gif) 0% 100% no-repeat;padding:0 21px 21px 17px;}
+.pop_layer11 .aa {background:url(../images/Common/u_dotlinen.gif) 0% 100% repeat-x;font:12px µ¸¿ò;margin:0 10px 15px 13px;padding:0 0 6px 0;color:#111;}
+.pop_layer11 .aa strong{font:bold 16px µ¸¿ò;}
+.pop_layer11 .ab{margin:0 10px 9px 13px;padding:0 0 11px 0;line-height:140%;color:#666;}
+.pop_layer11 .ab .cl01{font-weight:normal;color:#0179d0;}
+.pop_layer11 .ab span{display:block;padding:8px 0 0 0;}
+.pop_layer11 .box .btn{background:url(../images/Common/k_barbg03_1.gif) 0% 0% no-repeat;margin:17px 0 0 0;height:31px;padding:5px 0 0 0;text-align:center;width:391px;}
+
+.poptable{background: #ffffff; padding:15 15 15 15px;"}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='예상 과부족 현황' baseFont='굴림' baseFontSize='12' numberPrefix='' showValues='1' decimals='0' formatNumberScale='0' zeroPlaneColor='FFFFFF' zeroPlaneAlpha='80' zeroPlaneBorderColor='999999'>
+<set label='ITS기획팀' value='-4' color='ff0000' />
+<set label='ITS설계팀' value='3' color='3300CC' />
+<set label='여신팀' value='2' color='3300CC' />
+<set label='수신팀' value='0' color='ffffff' />
+<set label='카드팀' value='-2' color='ff0000' />
+</chart>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart palette='1' caption='근무연수별 인력현황(정규직)' shownames='1' showvalues='0' showSum='1' decimals='0' overlapColumns='0' baseFontSize='12'>
+<categories>
+<category label='5년 미만' />
+<category label='5-10년' />
+<category label='10-15년' />
+<category label='15-20년' />
+<category label='25년이상' />
+</categories>
+<dataset seriesName='감사팀'  showValues='0'>
+<set value='7' />
+<set value='34' />
+<set value='48' />
+<set value='96' />
+<set value='35' />
+</dataset>
+<dataset seriesName='경영관리본부'  showValues='0'>
+<set value='3' />
+<set value='18' />
+<set value='8' />
+<set value='5' />
+<set value='5' />
+</dataset>
+<dataset seriesName='ITS본부'  showValues='0'>
+<set value='2' />
+<set value='9' />
+<set value='6' />
+<set value='11' />
+<set value='20' />
+</dataset>
+<dataset seriesName='솔루션사업본부'  showValues='0'>
+<set value='2' />
+<set value='11' />
+<set value='16' />
+<set value='41' />
+<set value='20' />
+</dataset>
+<dataset seriesName='TIS사업본부'  showValues='0'>
+<set value='20' />
+<set value='11' />
+<set value='6' />
+<set value='4' />
+<set value='2' />
+</dataset>
+</chart>

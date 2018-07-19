@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wf="http://www.uengine.org/workflow-ws/schemas"
+	targetNamespace="http://www.uengine.org/workflow-ws/schemas"
+	elementFormDefault="qualified">
+	
+	<complexType name="Common">
+		<sequence>
+			<element name="externalKey" type="string" minOccurs="0" />
+			<element name="role" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="roleName" type="string" />
+						<element name="endpoint" type="string" minOccurs="0" maxOccurs="unbounded" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="processVariable" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="key" type="string" />
+						<element name="value" type="string" minOccurs="0" maxOccurs="unbounded" />
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="ActivityComplete">
+		<sequence>
+			<element name="endpoint" type="string" />
+			<element name="instanceId" type="string" />
+			<element name="taskId" type="string" />
+			<element name="tracingTag" type="string" />
+		</sequence>
+	</complexType>
+	
+	
+	<complexType name="ReturnMsg">
+		<sequence>
+			<element name="status" type="string" />
+			<element name="taskInfoList" >
+				<complexType>
+					<sequence>
+						<element name="TaskInfo" minOccurs="0" maxOccurs="unbounded">
+							<complexType>
+								<sequence>
+									<element name="externalKey" type="string" />
+									<element name="instanceId" type="string" />
+									<element name="taskId" type="string" />
+									<element name="tracingTag" type="string" />
+									<element name="handler" type="string" />
+									<element name="mainParam" type="string" />
+									<element name="subParam" type="string" />
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	
+	
+	
+	
+	
+	<element name="ActivityCompleteRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="activityComplete" type="wf:ActivityComplete" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ActivityCompleteResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="ApprovalDraftActivityCompleteRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="activityComplete" type="wf:ActivityComplete" />
+				<element name="approvalKey" type="string" />
+				<element name="comment" type="string" />
+				<element name="mainParam" type="string" minOccurs="0" />
+				<element name="subParam" type="string" minOccurs="0" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ApprovalDraftActivityCompleteResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="ApprovalActivityCompleteRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="activityComplete" type="wf:ActivityComplete" />
+				<element name="approvalKey" type="string" />
+				<element name="approvalStatus" type="string" />
+				<element name="comment" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ApprovalActivityCompleteResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="ApprovalLineChangeRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="instanceId" type="string" />
+				<element name="approvalKey" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ApprovalLineChangeResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+
+	<element name="InitializeProcessInstanceRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="instanceId" type="string" />
+				<element name="endpoint" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="InitializeProcessInstanceResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="ProcessStartRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="initiator" type="string" />
+				<element name="procAlias" type="string" />
+				<element name="instanceName" type="string" minOccurs="0" />
+				<element name="approvalKey" type="string" minOccurs="0" />
+				<element name="comment" type="string" />
+				<element name="mainParam" type="string" minOccurs="0" />
+				<element name="subParam" type="string" minOccurs="0" />
+				<element name="firstTaskCompleted" type="boolean" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ProcessStartResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="ProcessStopRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="instanceId" type="string" />
+				<element name="instanceStatus" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="ProcessStopResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="WorkItemAcceptRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="endpoint" type="string" />
+				<element name="instanceId" type="string" />
+				<element name="tracingTag" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="WorkItemAcceptResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="DelegateWorkItemRequest">
+		<complexType>
+			<sequence>
+				<element name="common" type="wf:Common" />
+				<element name="instanceId" type="string" />
+				<element name="tracingTag" type="string" />
+				<element name="endpoint" type="string" minOccurs="1" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="DelegateWorkItemResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	
+	
+	<element name="TaskInfoRequest">
+		<complexType>
+			<sequence>
+				<element name="externalKey" type="string" />
+				<element name="endpoint" type="string" />
+				<element name="instanceId" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="TaskInfoResponse">
+		<complexType>
+			<sequence>
+				<element name="ReturnMsg" type="wf:ReturnMsg" />
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

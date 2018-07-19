@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<chart caption='계약별 지원 인력현황' shownames='1' showvalues='0' decimals='0' yAxisMaxValue='220' baseFontSize='12'>
+<categories>
+	<category label='경영관리본부' />
+	<category label='솔루션사업본부' />
+	<category label='우리은행ITS본부' />
+	<category label='TIS본부' />
+	<category label='감사' />
+</categories>
+<dataset seriesName='정규직' color='AFD8F8' showValues='0'>
+	<set value='43.65' />
+	<set value='54.14' />
+	<set value='215.1' />
+	<set value='100.9' />
+	<set value='4.45' />
+</dataset>
+<dataset seriesName='계약직' color='F6BD0F' showValues='0'>
+	<set value='6.352' />
+	<set value='6.246' />
+	<set value='41' />
+	<set value='52.31' />
+	<set value='0' />
+</dataset>
+<dataset seriesName='도급직' color='8BBA00' showValues='0'>
+	<set value='4.764' />
+	<set value='13.1' />
+	<set value='90.79' />
+	<set value='3.794' />
+	<set value='0' />
+</dataset>
+</chart>
